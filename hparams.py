@@ -4,6 +4,8 @@ import numpy as np
 class Hparams:
     mel_checkpoint = './logs/mel_ckpt_51k.pt' # Претренированная melgan модель
     wav_checkpoint = "./logs/wav_ckpt_27k.pt" # Претренированная wavgan модель
+    #mel_checkpoint = None # Если тренировать с начала
+    #wav_checkpoint = None # Если тренировать с начала
     
     data_dir = './data' # Путь к звуковым файлам для тренировки
     test_dir = './test' # Папка куда надо поместить файлы для тестирования    
