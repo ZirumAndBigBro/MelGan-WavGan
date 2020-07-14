@@ -187,7 +187,8 @@ def train(format_wav):
                     'd_optimizer': d_optimizer.state_dict(),
                     'step': step,
                     'epoch': epoch,
-                }, save_dir +'/wav_ckpt_%dk.pt' % (step // 10000))
+                #}, save_dir +'/wav_ckpt_%dk.pt' % (step // 10000))
+                }, save_dir +'/wav_ckpt_%dk.pt' % (step))
                 
                 if testset:
                     print("Синтезируем тестовые файлы")
