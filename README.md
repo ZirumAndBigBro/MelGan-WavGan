@@ -69,4 +69,5 @@
 Запустите `python wavgan_phase_changer.py -r g -f wav` для файлов в wav
 
 Модели wavgan и wavgan_phase_changer полностью совместимы. 
-Мои предобученные [веса](http://www.mediafire.com/file/3a2dk2lb40vn03s/wav_ckpt_multi.pt/file) многоголосой модели (30 голосов, Ж+М, русские)
+
+## Мои предобученные [веса](http://www.mediafire.com/file/3a2dk2lb40vn03s/wav_ckpt_multi.pt/file) многоголосой модели (30 голосов, Ж+М, русские)
