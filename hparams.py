@@ -14,7 +14,7 @@ class Hparams:
 
     batch_size = 16 # Размер batch_size 
     max_epoch = 1000 # Максимальное число эпох
-    seq_len = 32 #*hop_length Длина сигнала во время обучения
+    seq_len = 32 #*hop_length Длина сигнала во время обучения (мин.размер файлов .glim в kB)
     save_interval = 1000 # Интервал сохранения модели
     log_interval = 100 # Интервал вывода ошибки
     lr = 1e-5 # Скорость обучения
