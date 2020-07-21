@@ -110,7 +110,7 @@ def train():
             # Получаем отклик на созданное аудио без градиентов 3*7*16*16*8192(4096,2048)
             d_fake_detach = D(fake_audio.cuda().detach())
             # Получаем отклик на созданное аудио
-            d_fake = D(fake_audio.cuda())
+            #d_fake = D(fake_audio.cuda())
             # Получаем отклик на реальное аудио
             d_real = D(audio)    
 
@@ -134,6 +134,7 @@ def train():
             d_optimizer.step()
 
             # ---------------Генератор----------------------
+            d_fake = D(fake_audio.cuda())
             # Считаем ошибку на отклик созданного сигнала с градиентом
             g_loss = 0
             for scale in d_fake:
